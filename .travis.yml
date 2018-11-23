@@ -280,7 +280,7 @@ install:
 
 script:
   - if [ "$USE_VALGRIND" == "On" ]; then CTEST_FLAGS="-D ExperimentalMemCheck"; fi
-  - ctest -j2 -VV ${CTEST_FLAGS}
+  - ctest -j2 -VV ${CTEST_FLAGS
 
 notifications:
   email: false
